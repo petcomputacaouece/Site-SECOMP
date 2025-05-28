@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../src/img/background-principal.png);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+}
+
+header {
+    height: 170px;
+    background-color: #001521;
+    box-shadow: 0px 2px 10px #111111;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 20px;
+}
+
+.div-TextoEdicao {
+    color: #DDDDDD;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.div-TextoEdicao h1 {
+    font-size: 70px;
+    padding-bottom: 10px;
+}
+
+.logo-secomp {
+    height: 180px;
+    padding-left: 200px;
+}
+
+.div-LogosOrganizacao {
+    display: flex;
+    height: 50px;
+    gap: 10%;
+    padding-top: 10px;
+}
+
+.div-SecaoMinicursos {
+    height: 350px;
+    width: 850px;
+    background-color: #DDDDDD;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.div-TituloSecaoMinicursos {
+    width: 220px;
+    height: 50px;
+    background: linear-gradient(to right, #AA8200, #FFC300);
+    border-radius: 30px;
+    margin-top: -20px;
+    text-align: center;
+    font-size: 25px;
+    color: #DDDDDD;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.div-InfoMinicurso {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    gap: 10px;
+}
+
+.div-CardMinicurso {
+    text-align: center;
+    width: 200px;
+    padding-top: 30px;
+}
+
+.img-InfoMinicurso {
+    height: 140px;
+}
+
+.div-InscricoesSuspensa {
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(to right, #004973, #001f31);
+    position: absolute;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    top: 87%;
+    box-shadow: 0px 2px 10px #111111;
+    cursor: pointer;
+}
