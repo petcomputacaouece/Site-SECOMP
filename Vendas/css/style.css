@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(../src/img/background-principal.png);
+    background-image: url(../src/background-principal.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -41,7 +41,7 @@ header {
     padding-top: 10px;
 }
 
-.div-SecaoMinicursos {
+.div-SecaoItens {
     height: 350px;
     width: 850px;
     background-color: #DDDDDD;
@@ -54,10 +54,10 @@ header {
     align-items: center;
 }
 
-.div-TituloSecaoMinicursos {
+.div-TituloSecaoItens {
     width: 220px;
     height: 50px;
-    background: linear-gradient(to right, #AA8200, #FFC300);
+    background: linear-gradient(to right, #004973, #0079BE);
     border-radius: 30px;
     margin-top: -20px;
     text-align: center;
@@ -68,21 +68,29 @@ header {
     transform: translateX(-50%);
 }
 
-.div-InfoMinicurso {
+.div-InfoItens {
     display: flex;
     justify-content: space-around;
-    padding: 50px 20px;
+    padding: 30px 10px 10px 40px;
     gap: 10px;
 }
 
-.div-CardMinicurso {
-    text-align: center;
+.div-CardItens {
+    text-align: left;
     width: 200px;
     padding-top: 30px;
 }
 
-.img-InfoMinicurso {
-    height: 140px;
+.img-InfoItens {
+    height: 200px;
+    border-radius: 10px;
+}
+
+.img-AdicionarInfoItens {
+    height: 20px;
+    float: right;
+    padding-right: 40px;
+    cursor: pointer;
 }
 
 .div-InscricoesSuspensa {
