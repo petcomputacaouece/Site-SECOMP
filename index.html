@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Home/Styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;700&display=swap" rel="stylesheet">
+    <script src="Home/Scripts/scripts.js" defer></script>
     <title>SECOMP-home</title>
 </head>
 <body>
@@ -37,5 +35,43 @@
             <p>Promovida desde 2003 pelo curso de Ciência da Computação, a Semana da Computação (SECOMP) reúne vários eventos e atividades, com o intuito de promover uma experiência produtiva sobre o mercado de trabalho na área de Computação, assim como apresentar algumas inovações tecnológicas, tendências e perspectivas.</p>
         </div>
     </div>
+    <div id="cronograma">
+        <div id="titulos">
+            <button class="btnCronograma ativo" style="background-color: #000;" onclick="mostrarTexto(0)">PALESTRAS</button>
+            <button class="btnCronograma" onclick="mostrarTexto(1)">MINICURSOS</button>
+            <button class="btnCronograma" onclick="mostrarTexto(2)">DINÂMICA</button>
+            <button class="btnCronograma" onclick="mostrarTexto(3)">MARATONA</button>
+            <button class="btnCronograma" onclick="mostrarTexto(4)">OUTROS</button>
+        </div>
+        <div id="textos">
+            <p class="texto" style="display: block;">Texto 1</p>
+            <p class="texto">Texto 2</p>
+            <p class="texto">Texto 3</p>
+            <p class="texto">Texto 4</p>
+            <p class="texto">Texto 5</p>
+        </div>
+    </div>
+    <div id="inscricao">
+        <p id="textoInscricao">SECOMP 2025 - Cybersegurança</p>
+        <button id="btnInscricao">INSCREVA-SE</button>
+    </div>
+    <footer>
+        <div id="logoESobre">
+            <img src="Home/img/logo-pet.png" alt="logoPET" class="logos">
+            <div id="textoSobrePET">
+                <p id="textoFooter">Somos um grupo de Pesquisa, Tutoria e Extrensão da UECE que tem como objetivo  a realização de projetos  acadêmicos voltados para  a comunidade acadêmica.</p>
+                <a href="link do site" id="linkSitePET" target="_blank">Saiba mais no nosso site!</a>
+            </div>
+            <img src="Home/img/logo-uece.png" alt="logoUECE" class="logos">
+        </div>
+        <div id="contatos">
+            <p>Contatos:</p>
+            <div id="redesSociais">
+                <a href="gmail" class="linkRedeSocial" target="_blank"><img src="Home/img/icons8-gmail-novo-50 (1).png" alt="gmail" class="linkRedeSocial"></a>
+                <a href="insta" class="linkRedeSocial" target="_blank"><img src="Home/img/icons8-instagram-50.png" alt="insta" class="linkRedeSocial"></a>
+                <a href="linkedin" class="linkRedeSocial" target="_blank"><img src="Home/img/icons8-linkedin-50.png" alt="linkedin" class="linkRedeSocial"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
