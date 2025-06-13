@@ -11,7 +11,7 @@
     }
 
     body {
-        background-image: url(../src/background-principal.png);
+        background-image: url(../../img/background-principal.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
