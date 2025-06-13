@@ -4,10 +4,13 @@
         font-weight: normal;
         font-style: normal;
     }
+    *{
+        box-sizing: border-box;
+    }
 
     body {
         margin: 0;
-        background-image: url(../../Minicursos/src/img/background-principal.png);
+        background-image: url(../../img/background-principal.png);
         font-family: 'KonkhmerSleokchher', sans-serif;
         background-repeat: no-repeat;
         background-size: cover;
@@ -69,7 +72,7 @@
         flex-direction: column;
         color: #fff;
         align-items: center;
-        margin-top: 400px;
+        margin-top: 300px;
         font-size: 30px;
         gap: 10px;
     }
