@@ -131,7 +131,7 @@ header {
     background: linear-gradient(to right, #2659ff, #1a00aa);
     text-align: center;
     font-size: 30px;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 0 20px 0 20px;
 }
 #sobreTabuleirando{
@@ -199,7 +199,7 @@ header {
     border-radius: 20px;
     border: 0;
     padding: 10px 20px 10px 20px;
-    background: linear-gradient(to right, #4122f4, #1a00aa);
+    background: linear-gradient(to right, #004973, #006199);
     color: #fff;
     margin-right: 20px;
     font-weight: 500;

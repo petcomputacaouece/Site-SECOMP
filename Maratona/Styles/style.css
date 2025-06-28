@@ -238,7 +238,7 @@
     .div-Premios {
         width: 200px;
         height: 50px;
-        background: linear-gradient(to right, #004973, #001f31);
+        background: linear-gradient(to right, #004973, #006199);
         position: sticky;
         display: flex;
         justify-content: center;
@@ -246,7 +246,7 @@
         color: white;
         border-radius: 10px;
         left: 50%;
-        font-family: 'KonkhmerSleokchher', sans-serif;
+        font-family: Lexend, sans-serif;
         font-size: 11px;
         text-decoration: underline;
         transform: translate(-50%, -50%);
