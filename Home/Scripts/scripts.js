@@ -13,3 +13,19 @@ function mostrarTexto(index){
         }
     });
 }
+
+window.addEventListener("scroll", function () {
+    const header = document.querySelector("header");
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 150) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+
+function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("open");
+}
