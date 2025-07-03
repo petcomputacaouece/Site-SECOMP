@@ -34,22 +34,40 @@
         position: absolute;
         left: 20px;
         height: 75px;
-        gap: 10%;
+        gap: 3vw;
         margin-top: 20px;
     }
+
+#logoSecompLateral {
+    display: none;
+    height: 110px;
+    width: 150px;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+#logoSecompCentral {
+    height: 110px;
+    width: 150px;
+    margin: auto;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+header.scrolled #logoSecompCentral {
+    display: none;
+}
+
+header.scrolled #logoSecompLateral {
+    display: block;
+}
+
 
     #divtituloheader {
         color: #ffffff;
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
-    }
-
-    #logoSecomp {
-        height: 110px;
-        width: 150px;
-        margin-top: 20px;
-        margin: 0 auto 0 auto
     }
 
     #tituloSecomp {
@@ -57,15 +75,114 @@
         margin: 0px;
         text-decoration: underline;
         text-align: center;
+        font-weight: 400;
+        line-height: 1.3;
     }
+
+    /* Transições suaves */
+#tituloSecomp,
+#subtituloSecomp {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Agrupamento título + subtítulo */
+#tituloContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* Quando header estiver com scroll */
+header.scrolled #divtituloheader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: 32vw;
+}
+
+/* Alinha título e subtítulo ao lado da logo */
+header.scrolled #tituloContainer {
+    align-items: center;
+    gap: 0;
+    margin:0;
+}
+
+/* Redimensiona título */
+header.scrolled #tituloSecomp {
+    font-size: 75px;
+    margin: 0;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+/* Redimensiona subtítulo */
+header.scrolled #subtituloSecomp {
+    font-size: 30px;
+    -webkit-text-stroke: 1px #fff;
+    line-height: 1;
+}
 
     #subtituloSecomp {
         color: transparent;
         text-align: center;
         -webkit-text-stroke: 1px #fff;
-        font-size: 50px;
+        font-size: 40px;
         margin: 0px 0 0 0;
     }
+
+    #menuToggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #F1F1F1;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Sidebar */
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -200px; /* escondida fora da tela */
+    width: 170px;
+    height: 100%;
+    background: linear-gradient(to bottom, #001521, #005687);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    padding-top: 60px;
+}
+
+#sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar nav ul li {
+    margin: 2.5rem;
+    text-align: center;
+}
+
+#sidebar nav ul li a {
+    color: #F1F1F1;
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: Lexend Deca, sans-serif;
+    font-weight: 300;
+    line-height: 100%;
+    font-style: Solid;
+}
+
+#sidebar.open {
+    right: 0;
+}
 
     #informacoesDoEvento {
         display: flex;
@@ -135,7 +252,7 @@
         border-radius: 20px;
         border: 0;
         padding: 10px 20px 10px 20px;
-        background: linear-gradient(to right, #4122f4, #1a00aa);
+        background: linear-gradient(to right, #004973, #006199);
         color: #fff;
         margin-right: 20px;
         font-weight: 500;
@@ -157,18 +274,34 @@
         margin-bottom: 50px;
     }
     .btnCronograma{
-        background: linear-gradient(to right, #4122f4, #1a00aa);
+        background: linear-gradient(to right, #004973, #0079BE);
         box-shadow: 0px 2px 10px #111111;
         color: #fff;
-        padding: 5px 17px 5px 17px;   
-        border-radius: 10px;
+        padding: 1vw 3vw 1vw 3vw;   
+        border-radius: 30px;
         border: 0; 
         cursor: pointer;
+        font-weight: 500;
+        font-size: medium;
     }
     .btnCronograma.ativo{
         background: none;
         background-color: #000;
     }
+
+    .maisCronograma{
+        background-color: #000;
+        box-shadow: 0px 2px 10px #111111;
+        color: #fff;
+        padding: 1vw 3vw 1vw 3vw;  
+        border-radius: 30px;
+        border: 0; 
+        cursor: pointer;
+        font-family: Lexend Deca, sans-serif;
+        font-size: medium;
+        text-decoration: none;
+    }
+
     #textos{
         margin-bottom: 200px;
         justify-content: center;
@@ -176,6 +309,7 @@
     .texto{
         display: none;
         text-align: center;
+        color: #037DC3;
     }
     footer{
         width: 100%;

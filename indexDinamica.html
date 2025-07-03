@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Dinamica/Styles/styles.css">
+    <script src="Dinamica/Scripts/scripts.js" defer></script>
     <title>Dinâmica</title>
 </head>
 <body>
@@ -15,9 +16,20 @@
         <img src="img/logo-secomp2.png" alt="SECOMP" id="logoSecomp">
         <div id="divtituloheader">
             <h1 id="tituloSecomp">Cyber Systems</h1>
-            <p id="subtituloSecomp">XXII Semana da Computação</p>
+            <p id="subtituloSecomp">XXII SEMANA DA COMPUTAÇÃO</p>
         </div>
+        <button id="menuToggle" onclick="toggleSidebar()">☰</button>
     </header>
+    <aside id="sidebar">
+        <nav>
+            <button id="menuToggle" onclick="toggleSidebar()">☰</button>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cronograma">Edições anteriores</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </aside>
     <div id="containerTabuleirando">
         <p id="tituloTabuleirando">Tabuleirando</p>
         <p id="sobreTabuleirando">Todos os dias de tarde estarão disponibilizados jogos de tabuleiros na sala do PET, onde os convidados podem jogar 1h por 3 reais, com um desconto de 2h por 5 reais. Os jogos que estarão disponíveis:</p>
@@ -45,7 +57,7 @@
         <div id="logoESobre">
             <img src="img/logo-pet.png" alt="logoPET" class="logos">
             <div id="textoSobrePET">
-                <p id="textoFooter">Somos um grupo de Pesquisa, Tutoria e Extrensão da UECE que tem como objetivo  a realização de projetos  acadêmicos voltados para  a comunidade acadêmica.</p>
+                <p id="textoFooter">Somos um grupo de Pesquisa, Tutoria e Extensão da UECE que tem como objetivo  a realização de projetos  acadêmicos voltados para  a comunidade acadêmica.</p>
                 <a href="link do site" id="linkSitePET" target="_blank">Saiba mais no nosso site!</a>
             </div>
             <img src="img/logo-uece.png" alt="logoUECE" class="logos">

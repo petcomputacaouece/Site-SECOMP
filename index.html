@@ -12,13 +12,28 @@
         <div id="divlogos">
             <img src="img/logo-pet.png" alt="PET-Computação" class="logos">
             <img src="img/logo-uece.png" alt="Uece" class="logos">
+            <img src="img/logo-secomp2.png" alt="SECOMP" class="logos" id="logoSecompLateral">
         </div>
+
         <div id="divtituloheader">
-            <img src="img/logo-secomp2.png" alt="SECOMP" id="logoSecomp">
-            <h1 id="tituloSecomp">Cyber Systems</h1>
-            <p id="subtituloSecomp">XXII Semana da Computação</p>
+            <img src="img/logo-secomp2.png" alt="SECOMP" id="logoSecompCentral">
+            <div id="tituloContainer">
+                <h1 id="tituloSecomp">Cyber Systems</h1>
+                <p id="subtituloSecomp">XXII SEMANA DA COMPUTAÇÃO</p>
+            </div>
         </div>
+        <button id="menuToggle" onclick="toggleSidebar()">☰</button>
     </header>
+    <aside id="sidebar">
+        <button id="menuToggle" onclick="toggleSidebar()">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cronograma">Edições anteriores</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </aside>
     <div id="informacoesDoEvento">
         <div class="dataLocal">
             <img src="img/icons8-agenda-50.png" alt="agenda" class="imagemDataLocal">
@@ -44,12 +59,27 @@
             <button class="btnCronograma" onclick="mostrarTexto(4)">OUTROS</button>
         </div>
         <div id="textos">
-            <p class="texto" style="display: block;">Texto 1</p>
-            <p class="texto">Texto 2</p>
-            <p class="texto">Texto 3</p>
-            <p class="texto">Texto 4</p>
-            <p class="texto">Texto 5</p>
-        </div>
+    <p class="texto" style="display: block;">
+        Texto 1<br><br>
+        <a href="indexPalestra.html" class="maisCronograma" target="_blank">Veja mais →</a>
+    </p>
+    <p class="texto">
+        Texto 2<br><br>
+        <a href="indexMinicurso.html" class="maisCronograma" target="_blank">Veja mais →</a>
+    </p>
+    <p class="texto">
+        Texto 3<br><br>
+        <a href="indexDinamica.html" class="maisCronograma" target="_blank">Veja mais →</a>
+    </p>
+    <p class="texto">
+        Texto 4<br><br>
+        <a href="indexMaratona.html" class="maisCronograma" target="_blank">Veja mais →</a>
+    </p>
+    <p class="texto">
+        Texto 5<br><br>
+        <a href="indexVendas.html" class="maisCronograma" target="_blank">Veja mais →</a>
+    </p>
+</div>
     </div>
     <div id="inscricao">
         <p id="textoInscricao">SECOMP 2025 - Cybersegurança</p>
@@ -59,7 +89,7 @@
         <div id="logoESobre">
             <img src="img/logo-pet.png" alt="logoPET" class="logos">
             <div id="textoSobrePET">
-                <p id="textoFooter">Somos um grupo de Pesquisa, Tutoria e Extrensão da UECE que tem como objetivo  a realização de projetos  acadêmicos voltados para  a comunidade acadêmica.</p>
+                <p id="textoFooter">Somos um grupo de Pesquisa, Tutoria e Extensão da UECE que tem como objetivo  a realização de projetos  acadêmicos voltados para  a comunidade acadêmica.</p>
                 <a href="link do site" id="linkSitePET" target="_blank">Saiba mais no nosso site!</a>
             </div>
             <img src="img/logo-uece.png" alt="logoUECE" class="logos">
