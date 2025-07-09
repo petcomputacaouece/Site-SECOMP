@@ -10,8 +10,6 @@
 <body>
     <header>
         <div id="divlogos">
-            <img src="img/logo-pet.png" alt="PET-Computação" class="logos">
-            <img src="img/logo-uece.png" alt="Uece" class="logos">
             <img src="img/logo-secomp2.png" alt="SECOMP" class="logos" id="logoSecompLateral">
         </div>
 
@@ -28,9 +26,9 @@
         <button id="menuToggle" onclick="toggleSidebar()">☰</button>
         <nav>
             <ul>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#textoSobre">Sobre</a></li>
                 <li><a href="#cronograma">Edições anteriores</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#contato" onclick="toggleSidebar()">Contato</a></li>
             </ul>
         </nav>
     </aside>
@@ -85,21 +83,17 @@
         <p id="textoInscricao">SECOMP 2025 - Cybersegurança</p>
         <button id="btnInscricao">INSCREVA-SE</button>
     </div>
-    <footer>
+    <footer id="contato">
         <div id="logoESobre">
             <img src="img/logo-pet.png" alt="logoPET" class="logos">
-            <div id="textoSobrePET">
-                <p id="textoFooter">Somos um grupo de Pesquisa, Tutoria e Extensão da UECE que tem como objetivo  a realização de projetos  acadêmicos voltados para  a comunidade acadêmica.</p>
-                <a href="link do site" id="linkSitePET" target="_blank">Saiba mais no nosso site!</a>
-            </div>
             <img src="img/logo-uece.png" alt="logoUECE" class="logos">
         </div>
         <div id="contatos">
             <p>Contatos:</p>
             <div id="redesSociais">
-                <a href="gmail" class="linkRedeSocial" target="_blank"><img src="img/icons8-gmail-novo-50 (1).png" alt="gmail" class="linkRedeSocial"></a>
-                <a href="insta" class="linkRedeSocial" target="_blank"><img src="img/icons8-instagram-50.png" alt="insta" class="linkRedeSocial"></a>
-                <a href="linkedin" class="linkRedeSocial" target="_blank"><img src="img/icons8-linkedin-50.png" alt="linkedin" class="linkRedeSocial"></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pet.computacao@uece.br" class="linkRedeSocial" target="_blank"><img src="img/icons8-gmail-novo-50 (1).png" alt="gmail" class="linkRedeSocial"></a>
+                <a href="https://www.instagram.com/petcomputacao/" class="linkRedeSocial" target="_blank"><img src="img/icons8-instagram-50.png" alt="insta" class="linkRedeSocial"></a>
+                <a href="https://www.linkedin.com/company/pet-computa%C3%A7%C3%A3o-uece" class="linkRedeSocial" target="_blank"><img src="img/icons8-linkedin-50.png" alt="linkedin" class="linkRedeSocial"></a>
             </div>
         </div>
     </footer>

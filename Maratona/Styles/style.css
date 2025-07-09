@@ -73,8 +73,8 @@
 
     #menuToggle {
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 21px;
+        right: 26px;
         font-size: 30px;
         background: none;
         border: none;
@@ -127,33 +127,28 @@
         flex-direction: column;
         align-items: center;
         width: 70%;
-        height: 5vw;
+        height: 6vw;
         margin: auto;
         background-color:#dddddd;
         margin-top: 4vw;
         border-radius: 10px;
         font-family: 'KonkhmerSleokchher', sans-serif;
-        font-size: 10px;
         box-shadow: 0px 2px 10px #111111;
     }
 
     .div-TituloMaratona {
-        width: 220px;
-        height: 50px;
-        background: linear-gradient(to right, #C50407, #28050B);
+        background: linear-gradient(#1434d4, #519CFE);
         border-radius: 30px;
-        margin-top: -20px;
-        text-align: center;
+        margin-top: -25px;
         font-family: 'KonkhmerSleokchher', sans-serif;
-        font-size: 20px;
-        letter-spacing: 1px;
+        font-size: 28px;
         color: #ffffff;
         box-shadow: 0px 2px 10px #5c6b7c91;
+        padding: 0 1.5rem;
     }
 
-    .div-Maratona h1 {
-        font-family: 'KonkhmerSleokchher', sans-serif;
-        font-size: 18px;
+    .div-Maratona h4 {
+        margin: auto;
     }
 
     .categorias {
@@ -168,90 +163,71 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 30%;
-        height: 15vw;
+        width: 45%;
+        height: 16vw;
         margin: auto;
         background-color:#dddddd;
         border-radius: 10px;
         font-family: 'KonkhmerSleokchher', sans-serif;
-        font-size: 10px;
         box-shadow: 0px 2px 10px #111111;
     }
 
     .div-TituloIniciante {
-        width: 200px;
-        height: 50px;
-        background: linear-gradient(to right, #1B40FB, #519CFE);
+        background: linear-gradient(to left, #C50407, #5f0310);
         border-radius: 30px;
         margin-top: -20px;
-        text-align: center;
         font-family: 'KonkhmerSleokchher', sans-serif;
-        font-size: 20px;
-        letter-spacing: 1px;
+        font-size: 28px;
         color: #ffffff;
         box-shadow: 0px 2px 10px #5c6b7c91;
-        
+        padding: 0 1.5rem;
     }
 
-    .div-Iniciante h1 {
-        font-family: 'KonkhmerSleokchher', sans-serif;
-        font-size: 18px;
-        margin-top: 4vw;
-        
+    .div-Iniciante h4 {
+        margin: auto;
+        margin-top: 5%;
     }
 
     .div-Intermediario {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 30%;
-        height: 15vw;
+        width: 45%;
+        height: 16vw;
         margin: auto;
         background-color:#dddddd;
         border-radius: 10px;
         font-family: 'KonkhmerSleokchher', sans-serif;
-        font-size: 10px;
         box-shadow: 0px 2px 10px #111111;
     }
 
     .div-TituloIntermediario {
-        width: 260px;
-        height: 50px;
-        background: linear-gradient(to right, #AA8200, #FFC300);
+        background: linear-gradient(to left, #AA8200, #FFC300);
         border-radius: 30px;
         margin-top: -20px;
-        text-align: center;
         font-family: 'KonkhmerSleokchher', sans-serif;
-        font-size: 20px;
-        letter-spacing: 1px;
+        font-size: 28px;
         color: #ffffff;
         box-shadow: 0px 2px 10px #5c6b7c91;
-    }
-
-    .div-Intermediario h1 {
-        font-family: 'KonkhmerSleokchher', sans-serif;
-        font-size: 18px;
-        margin-top: 4vw;
+        padding: 0 1.5rem;
     }
     
+    .div-Intermediario h4 {
+        margin: auto;
+        margin-top: 5%;
+    }
 
     .div-Premios {
-        width: 200px;
-        height: 50px;
-        background: linear-gradient(to right, #004973, #006199);
-        position: sticky;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background: linear-gradient(#004973, #006199);
+        text-align: center;
         color: white;
-        border-radius: 10px;
-        left: 50%;
-        font-family: Lexend, sans-serif;
-        font-size: 11px;
-        text-decoration: underline;
-        transform: translate(-50%, -50%);
+        border-radius: 15px;
+        font-size: 25px;
         box-shadow: 0px 2px 10px #111111;
         cursor: pointer;
+        width: 12%;
+        margin: auto;
+        margin-bottom: 2rem;
     }
 
     footer{
@@ -266,23 +242,14 @@
     width: 50%;
     display: flex;
     align-items: center;
-    margin-left: 10%;
+    margin-left: 2%;
+    gap: 5%;
 }
 .logos{
     width: 75px;
     height: 75px;
 }
-#textoSobrePET{
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    width:400px;
-}
-#textoFooter{
-    text-align: center;
-    margin: 0;
-    font-size: 14px;
-}
+
 #linkSitePET{
     text-align: center;
     font-size: 14px;
@@ -294,14 +261,16 @@
 }
 #contatos p{
     color: #fff;
-    text-align: center;
+    text-align: right;
+  margin-right: 9%;
     font-size: 20px;
 }
 #redesSociais{
     display: flex;
-    justify-content: center;
     gap: 40px;
-    margin-top: 3.5%;
+    margin-top: 3%;
+    justify-content: right; 
+    margin-right: 3.5%;
 }
 .linkRedeSocial{
     width: 30px;

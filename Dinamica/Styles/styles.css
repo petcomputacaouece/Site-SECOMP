@@ -27,16 +27,9 @@ header {
     top: 0;
     justify-content: center;
     padding: 0 20px;
+    z-index: 2000;
 }
 
-#divlogos {
-    display: flex;
-        position: absolute;
-        left: 20px;
-        height: 75px;
-        gap: 3vw;
-        margin-top: 20px;
-}
 #divtituloheader {
     color: #dddddd;
     display: flex;
@@ -151,23 +144,31 @@ header {
     margin-bottom: 100px;
 }
 #textoJogos{
+    color: #fff;
+    box-shadow: 0px 2px 10px #111111;
+    background: linear-gradient(to right, #AA8200, #FFC300);
     text-align: center;
     font-size: 30px;
-    text-decoration: underline;
-    color: #fff;
-    margin-bottom: 20px;
+    border-radius: 30px;
+    padding: 0 20px 0 20px;
+    width: 28%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .jogos{
     height: 250px;
     width: 250px;
-    background-color: #c4c4c4;
     border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+.jogos:hover{
+    transform: scale(1.1);
 }
 .imgTituloJogo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
+    height: 250px;
+    width: 250px;
+    background-color: #c4c4c4;
+    border-radius: 50px;
 }
 .sobreJogo{
     text-align: center;
@@ -206,53 +207,47 @@ header {
     cursor: pointer;
 }
 footer{
-    width: 100%;
-    display: flex;
-    background-color: #001521;
-    bottom: 0px;
-    height: 150px;
-    box-shadow: 0px -2px 10px #111111;
-}
-#logoESobre{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    margin-left: 10%;
-}
-.logos{
-    width: 75px;
-    height: 75px;
-}
-#textoSobrePET{
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    width:400px;
-}
-#textoFooter{
-    text-align: center;
-    margin: 0;
-    font-size: 14px;
-}
-#linkSitePET{
-    text-align: center;
-    font-size: 14px;
-    color: white;
-}
-#contatos{
-    width: 50%;
-}
-#contatos p{
-    color: #fff;
-    text-align: center;
-    font-size: 20px;
-}
-#redesSociais{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-.linkRedeSocial{
-    width: 30px;
-    height: 30px;
-}
+        width: 100%;
+        display: flex;
+        background-color: #001521;
+        bottom: 0px;
+        height: 150px;
+        box-shadow: 0px -2px 10px #111111;
+    }
+    #logoESobre{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        margin-left: 2%;
+        gap: 5%;
+    }
+    .logos{
+        width: 75px;
+        height: 75px;
+    }
+    
+    #linkSitePET{
+        text-align: center;
+        font-size: 14px;
+        color: white;
+    }
+    #contatos{
+        width: 50%;
+        
+    }
+    #contatos p{
+        color: #fff;
+        text-align: right;
+        font-size: 20px;
+        margin-right: 9%;
+    }
+    #redesSociais{
+        display: flex;
+        justify-content: right;
+        gap: 40px;
+        margin-right: 3.5%;
+    }
+    .linkRedeSocial{
+        width: 30px;
+        height: 30px;
+    }

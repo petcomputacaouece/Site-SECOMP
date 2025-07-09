@@ -8,6 +8,11 @@
         box-sizing: border-box;
     }
 
+    html {
+    scroll-padding-top: 170px;
+    scroll-behavior: smooth;
+    }
+
     body {
         margin: 0;
         background-image: url(../../img/background-principal.png);
@@ -27,15 +32,6 @@
         top: 0;
         justify-content: center;
         padding: 0 20px;
-    }
-
-    #divlogos {
-        display: flex;
-        position: absolute;
-        left: 20px;
-        height: 75px;
-        gap: 3vw;
-        margin-top: 20px;
     }
 
 #logoSecompLateral {
@@ -99,8 +95,6 @@ header.scrolled #divtituloheader {
     flex-direction: row;
     align-items: center;
     margin-top: 0;
-    margin-right: auto;
-    margin-left: 32vw;
 }
 
 /* Alinha título e subtítulo ao lado da logo */
@@ -112,10 +106,10 @@ header.scrolled #tituloContainer {
 
 /* Redimensiona título */
 header.scrolled #tituloSecomp {
-    font-size: 75px;
+    font-size: 95px;
     margin: 0;
     text-decoration: none;
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 /* Redimensiona subtítulo */
@@ -323,23 +317,14 @@ header.scrolled #subtituloSecomp {
         width: 50%;
         display: flex;
         align-items: center;
-        margin-left: 10%;
+        margin-left: 2%;
+        gap: 5%;
     }
     .logos{
         width: 75px;
         height: 75px;
     }
-    #textoSobrePET{
-        display: flex;
-        flex-direction: column;
-        color: #fff;
-        width:400px;
-    }
-    #textoFooter{
-        text-align: center;
-        margin: 0;
-        font-size: 14px;
-    }
+    
     #linkSitePET{
         text-align: center;
         font-size: 14px;
@@ -350,13 +335,15 @@ header.scrolled #subtituloSecomp {
     }
     #contatos p{
         color: #fff;
-        text-align: center;
+        text-align: right;
         font-size: 20px;
+        margin-right: 9%;
     }
     #redesSociais{
         display: flex;
-        justify-content: center;
+        justify-content: right;
         gap: 40px;
+        margin-right: 3.5%;
     }
     .linkRedeSocial{
         width: 30px;
