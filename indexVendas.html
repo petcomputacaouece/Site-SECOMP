@@ -8,59 +8,80 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;700&display=swap" rel="stylesheet">
+    <script src="Dinamica/Scripts/scripts.js" defer></script>
     <title>Vendas</title>
 </head>
 
 <body>
     <header>
-        <div class="div-LogosOrganizacao">
-            <img src="img/logo-pet.png" alt="Logo do PET Computação" class="logo-pet">
-            <img src="img/logo-uece.png" alt="" class="logo-uece">
+        <img src="img/logo-secomp2.png" alt="SECOMP" id="logoSecomp">
+        <div id="divtituloheader">
+            <h1 id="tituloSecomp">Cyber Systems</h1>
+            <p id="subtituloSecomp">XXII SEMANA DA COMPUTAÇÃO</p>
         </div>
-
-        <img src="img/logo-secomp2.png" alt="Logo da Secomp" class="logo-secomp">
-        <div class="div-TextoEdicao">
-            <h1>Cyber Systems</h1>
-            <h2 style="font-family: 'Lexend', sans-serif;">XXII SEMANA DA COMPUTAÇÃO</h2>
-        </div>
+        <button id="menuToggle" onclick="toggleSidebar()">☰</button>
     </header>
+    <aside id="sidebar">
+        <nav>
+            <button id="menuToggle" onclick="toggleSidebar()">☰</button>
+            <ul>
+                <li><a href="/index.html#sobre">Sobre</a></li>
+                <li><a href="#cronograma">Edições anteriores</a></li>
+                <li><a href="#contato" onclick="toggleSidebar()">Contato</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-    <main>
-        <div class="div-SecaoItens">
-            <div class="div-TituloSecaoItens">
-                <h2 style="margin-top: -3px;">Blusas</h2>
+    <div class="div-SecaoItens">
+        <div class="div-TituloSecaoItens">
+            <h2 style="margin-top: -3px;">Blusas</h2>
+        </div>
+
+        <div class="div-InfoItens">
+            <div class="div-CardItens">
+                <img src="img/blusas.png" alt="" class="img-InfoItens">
+                <h3>Blusa Gatinho</h3>
+                <img src="img/botao-adicionar.png" alt="" class="img-AdicionarInfoItens">
+                <h3>R$ 40</h3>
+            </div>
+            <div class="div-CardItens">
+                <img src="img/blusas (2).png" alt="" class="img-InfoItens">
+                <h3>Blusa Gatinho</h3>
+                <img src="img/botao-adicionar.png" alt="" class="img-AdicionarInfoItens">
+                <h3>R$ 40</h3>
+            </div>
+            <div class="div-CardItens">
+                <img src="img/blusas (4).png" alt="" class="img-InfoItens">
+                <h3>Blusa Gatinho</h3>
+                <img src="img/botao-adicionar.png" alt="" class="img-AdicionarInfoItens">
+                <h3>R$ 40</h3>
             </div>
 
-            <div class="div-InfoItens">
-                <div class="div-CardItens">
-                    <img src="img/blusas.png" alt=""
-                        class="img-InfoItens">
-                    <h3>Blusa Gatinho</h3>
-                    <img src="img/botao-adicionar.png" alt="" class="img-AdicionarInfoItens">
-                    <h3>R$ 40</h3>
-                </div>
-                <div class="div-CardItens">
-                    <img src="img/blusas (2).png" alt=""
-                        class="img-InfoItens">
-                    <h3>Blusa Gatinho</h3>
-                    <img src="img/botao-adicionar.png" alt="" class="img-AdicionarInfoItens">
-                    <h3>R$ 40</h3>
-                </div>
-                <div class="div-CardItens">
-                    <img src="img/blusas (4).png" alt=""
-                        class="img-InfoItens">
-                    <h3>Blusa Gatinho</h3>
-                    <img src="img/botao-adicionar.png" alt="" class="img-AdicionarInfoItens">
-                    <h3>R$ 40</h3>
-                </div>
+        </div>
+    </div>
 
+    <div id="inscricao">
+        <p id="textoInscricao">SECOMP 2025 - Cybersegurança</p>
+        <button id="btnInscricao">INSCREVA-SE</button>
+    </div>
+    
+    <footer id="contato">
+        <div id="logoESobre">
+            <img src="img/logo-pet.png" alt="logoPET" class="logos">
+            <img src="img/logo-uece.png" alt="logoUECE" class="logos">
+        </div>
+        <div id="contatos">
+            <p>Contatos:</p>
+            <div id="redesSociais">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pet.computacao@uece.br" class="linkRedeSocial"
+                    target="_blank"><img src="img/icons8-gmail-novo-50 (1).png" alt="gmail" class="linkRedeSocial"></a>
+                <a href="https://www.instagram.com/petcomputacao/" class="linkRedeSocial" target="_blank"><img
+                        src="img/icons8-instagram-50.png" alt="insta" class="linkRedeSocial"></a>
+                <a href="https://www.linkedin.com/company/pet-computa%C3%A7%C3%A3o-uece" class="linkRedeSocial"
+                    target="_blank"><img src="img/icons8-linkedin-50.png" alt="linkedin" class="linkRedeSocial"></a>
             </div>
         </div>
-    </main>
-
-    <div class="div-InscricoesSuspensa">
-        <h1>Inscrições</h1>
-    </div>
+    </footer>
 </body>
 
 </html>
