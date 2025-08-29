@@ -131,7 +131,7 @@ header {
     border-radius: 30px;
     margin-top: -20px;
     text-align: center;
-    font-family: 'KonkhmerSleokchher', sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 22px;
     letter-spacing: 1px;
     color: #DDDDDD;
@@ -245,6 +245,7 @@ footer{
         width: 30px;
         height: 30px;
     }
+
 
 
 
