@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'KonkhmerSleokchher';
-    src: url('/textfonts/KonkhmerSleokchher-Regular.woff') format('woff');
+    src: url('../../textfonts/KonkhmerSleokchher-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
