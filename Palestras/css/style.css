@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'KonkhmerSleokchher';
-    src: url('/textfonts/KonkhmerSleokchher-Regular.woff') format('woff');
+    src: url('../../textfonts/KonkhmerSleokchher-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -131,7 +131,7 @@ header {
     border-radius: 30px;
     margin-top: -20px;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'KonkhmerSleokchher', sans-serif;
     font-size: 22px;
     letter-spacing: 1px;
     color: #DDDDDD;
@@ -245,7 +245,6 @@ footer{
         width: 30px;
         height: 30px;
     }
-
 
 
 
