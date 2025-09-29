@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;700&display=swap" rel="stylesheet">
     <script src="Dinamica/Scripts/scripts.js" defer></script>
+    <script src="Minicursos/Scripts/scriptMinicurso.js" defer></script>
     <title>Minicursos</title>
 </head>
 
@@ -36,27 +37,24 @@
         <div class="div-TituloSecaoMinicursos">
             <h2 style="margin-top: -3px;">Minicursos</h2>
         </div>
-        <div class="div-InfoMinicurso">
-            <div class="div-CardMinicurso">
-                <img src="img/Pablo-Marçal-PRTB-300x200.png" alt="" class="img-InfoMinicurso">
-                <h3 style="color: #037DC3;">Pablo Marçal</h3>
-                <img src="img/icon-info.png" alt="" class="img-bttInfoMinicurso">
-                <h3 style="margin-top: 10px;">Como crescer mentalmente usando Java</h3>
-            </div>
-            <div class="div-CardMinicurso">
-                <img src="img/Pablo-Marçal-PRTB-300x200.png" alt="" class="img-InfoMinicurso">
-                <h3 style="color: #037DC3;">Pablo Marçal</h3>
-                <img src="img/icon-info.png" alt="" class="img-bttInfoMinicurso">
-                <h3 style="margin-top: 10px;">Como crescer mentalmente usando Java</h3>
-            </div>
-            <div class="div-CardMinicurso">
-                <img src="img/Pablo-Marçal-PRTB-300x200.png" alt="" class="img-InfoMinicurso">
-                <h3 style="color: #037DC3;">Pablo Marçal</h3>
-                <img src="img/icon-info.png" alt="" class="img-bttInfoMinicurso">
-                <h3 style="margin-top: 10px;">Como crescer mentalmente usando Java</h3>
-            </div>
+
+        <div class="popUpInfo" id="div-popUpInfo">
 
         </div>
+        <div class="div-bttsMinicursos">
+            <button onclick="mostrarMinicurso(1)" class="bttDiaMinicurso">Dia 1</button>
+            <button onclick="mostrarMinicurso(2)" class="bttDiaMinicurso">Dia 2</button>
+            <button onclick="mostrarMinicurso(3)" class="bttDiaMinicurso">Dia 3</button>
+            <button onclick="mostrarMinicurso(4)" class="bttDiaMinicurso">Dia 4</button>
+        </div>
+
+        <div class="div-InfoMinicurso" id="div-InfoMinicurso">
+
+        </div>
+
+
+
+    </div>
     </div>
 
     <div id="inscricao">

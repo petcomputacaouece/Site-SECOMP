@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+/* img {
+    height: 1000px;
+} */
+
 body {
     margin: 0;
     background-image: url(../../img/background-principal.png);
@@ -118,7 +122,7 @@ header {
 .div-SecaoMinicursos {
     width: 850px;
     background-color: #DDDDDD;
-    margin: 50px auto 0 auto; 
+    margin: 50px auto 0 auto;
     border-radius: 10px;
     align-items: center;
     padding-bottom: 30px;
@@ -154,7 +158,7 @@ header {
     padding-top: 30px;
 }
 
-.div-CardMinicurso h3{
+.div-CardMinicurso h3 {
     font-family: 'Lexend', sans-serif;
     font-weight: 300;
 }
@@ -203,48 +207,95 @@ header {
     cursor: pointer;
 }
 
-footer{
-        width: 100%;
-        display: flex;
-        background-color: #001521;
-        bottom: 0px;
-        height: 150px;
-        box-shadow: 0px -2px 10px #111111;
-    }
-    #logoESobre{
-        width: 50%;
-        display: flex;
-        align-items: center;
-        margin-left: 2%;
-        gap: 5%;
-    }
-    .logos{
-        width: 75px;
-        height: 75px;
-    }
-    
-    #linkSitePET{
-        text-align: center;
-        font-size: 14px;
-        color: white;
-    }
-    #contatos{
-        width: 50%;
-        
-    }
-    #contatos p{
-        color: #fff;
-        text-align: right;
-        font-size: 20px;
-        margin-right: 9%;
-    }
-    #redesSociais{
-        display: flex;
-        justify-content: right;
-        gap: 40px;
-        margin-right: 3.5%;
-    }
-    .linkRedeSocial{
-        width: 30px;
-        height: 30px;
-    }
+footer {
+    width: 100%;
+    display: flex;
+    background-color: #001521;
+    bottom: 0px;
+    height: 150px;
+    box-shadow: 0px -2px 10px #111111;
+}
+
+#logoESobre {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    gap: 5%;
+}
+
+.logos {
+    width: 75px;
+    height: 75px;
+}
+
+#linkSitePET {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+#contatos {
+    width: 50%;
+
+}
+
+#contatos p {
+    color: #fff;
+    text-align: right;
+    font-size: 20px;
+    margin-right: 9%;
+}
+
+#redesSociais {
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+    margin-right: 3.5%;
+}
+
+.linkRedeSocial {
+    width: 30px;
+    height: 30px;
+}
+
+.bttDiaMinicurso {
+    border: none;
+    border-bottom: 3px solid #006199;
+    margin-right: 10px;
+    font-size: large;
+    font-family: 'Lexend', sans-serif;
+    margin-top: 60px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: #DDDDDD;
+}
+
+.bttDiaMinicurso:hover {
+    border-bottom: 3px solid #e6b000;
+}
+
+.bttDiaMinicurso.ativo {
+    border-bottom: 3px solid #e6b000;
+}
+
+.popUpInfo {
+    width: 500px;
+    height: 500px;
+    background-color: #f0f0f0;
+    position: absolute;
+    margin-top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 5px 4px 100px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    visibility: hidden;
+    z-index: -1000px;
+}
+
+#div-popUpInfo.open {
+    visibility: visible;
+    padding: 20px;
+    font-family: 'Lexend', sans-serif;
+
+}
