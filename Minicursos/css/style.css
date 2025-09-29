@@ -117,6 +117,7 @@ header {
 
 #sidebar.open {
     right: 0;
+    z-index: 10000;
 }
 
 .div-SecaoMinicursos {

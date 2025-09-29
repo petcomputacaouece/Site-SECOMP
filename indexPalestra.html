@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;700&display=swap" rel="stylesheet">
     <!-- JS -->
     <script src="Dinamica/Scripts/scripts.js" defer></script>
+    <script src="Palestras/Scripts/scriptPalestra.js" defer></script>
     <title>Palestra</title>
 </head>
 
@@ -40,26 +41,16 @@
         <div class="div-TituloSecaoPalestras">
             <h2 style="margin-top: -3px" ;>Palestras</h2>
         </div>
-        <div class="div-InfoPalestra">
-            <div class="div-CardPalestra">
-                <img src="img/Pablo-Marçal-PRTB-300x200.png" alt="" class="img-InfoPalestra">
-                <h3 style="color: #037DC3;">Pablo Marçal</h3>
-                <img src="img/icon-info.png" alt="" class="img-bttInfoMinicurso">
-                <h3 style="margin-top: 10px;">Como crescer mentalmente usando Java</h3>
-            </div>
-            <div class="div-CardPalestra">
-                <img src="img/Pablo-Marçal-PRTB-300x200.png" alt="" class="img-InfoPalestra">
-                <h3 style="color: #037DC3;">Pablo Marçal</h3>
-                <img src="img/icon-info.png" alt="" class="img-bttInfoMinicurso">
-                <h3 style="margin-top: 10px;">Como crescer mentalmente usando Java</h3>
-            </div>
-            <div class="div-CardPalestra">
-                <img src="img/Pablo-Marçal-PRTB-300x200.png" alt="" class="img-InfoPalestra">
-                <h3 style="color: #037DC3;">Pablo Marçal</h3>
-                <img src="img/icon-info.png" alt="" class="img-bttInfoMinicurso">
-                <h3 style="margin-top: 10px;">Como crescer mentalmente usando Java</h3>
-            </div>
+        <div class="popUpInfo" id="div-popUpInfo">
 
+        </div>
+        <div class="div-bttsPalestra">
+            <button onclick="mostrarPalestra(1)" class="bttDiaPalestra">Dia 1</button>
+            <button onclick="mostrarPalestra(2)" class="bttDiaPalestra">Dia 2</button>
+            <button onclick="mostrarPalestra(3)" class="bttDiaPalestra">Dia 3</button>
+            <button onclick="mostrarPalestra(4)" class="bttDiaPalestra">Dia 4</button>
+        </div>
+        <div class="div-InfoPalestra" id="div-InfoPalestra">
         </div>
     </div>
 

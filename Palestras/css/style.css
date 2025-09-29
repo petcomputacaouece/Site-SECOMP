@@ -5,8 +5,8 @@
     font-style: normal;
 }
 
-*{
-box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -57,23 +57,24 @@ header {
 #subtituloSecomp {
     color: transparent;
     text-align: center;
-    -webkit-text-stroke: 1px #DDDDDD;;
+    -webkit-text-stroke: 1px #DDDDDD;
+    ;
     font-size: 30px;
     line-height: 1;
     margin: 0;
 }
 
 #menuToggle {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        font-size: 30px;
-        background: none;
-        border: none;
-        color: #F1F1F1;
-        cursor: pointer;
-        z-index: 1001;
-    }
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #F1F1F1;
+    cursor: pointer;
+    z-index: 1001;
+}
 
 #sidebar {
     position: fixed;
@@ -117,12 +118,11 @@ header {
 .div-SecaoPalestras {
     width: 850px;
     background-color: #DDDDDD;
-    margin: 50px auto 0 auto; /* margem superior opcional */
+    margin: 50px auto 0 auto;
     border-radius: 10px;
     align-items: center;
     padding-bottom: 30px;
 }
-
 
 .div-TituloSecaoPalestras {
     width: 220px;
@@ -154,24 +154,24 @@ header {
     padding-top: 30px;
 }
 
-.img-InfoPalestra {
-    height: 140px;
-    border-radius: 10px;
-}
-
 .div-CardPalestra h3 {
     font-family: 'Lexend', sans-serif;
     font-weight: 300;
 }
 
-.img-bttInfoMinicurso {
+.img-InfoPalestra {
+    height: 140px;
+    border-radius: 10px;
+}
+
+.img-bttInfoPalestra {
     height: 20px;
     float: right;
     margin-top: -22px;
     cursor: pointer;
 }
 
-#inscricao{
+#inscricao {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -185,10 +185,12 @@ header {
     transform: translateX(-50%);
     margin-bottom: 50px;
 }
-#textoInscricao{
+
+#textoInscricao {
     margin-left: 20px;
 }
-#btnInscricao{
+
+#btnInscricao {
     height: auto;
     width: auto;
     border-radius: 20px;
@@ -200,51 +202,96 @@ header {
     font-weight: 500;
     cursor: pointer;
 }
-footer{
-        width: 100%;
-        display: flex;
-        background-color: #001521;
-        bottom: 0px;
-        height: 150px;
-        box-shadow: 0px -2px 10px #111111;
-    }
-    #logoESobre{
-        width: 50%;
-        display: flex;
-        align-items: center;
-        margin-left: 2%;
-        gap: 5%;
-    }
-    .logos{
-        width: 75px;
-        height: 75px;
-    }
-    
-    #linkSitePET{
-        text-align: center;
-        font-size: 14px;
-        color: white;
-    }
-    #contatos{
-        width: 50%;
-        
-    }
-    #contatos p{
-        color: #fff;
-        text-align: right;
-        font-size: 20px;
-        margin-right: 9%;
-    }
-    #redesSociais{
-        display: flex;
-        justify-content: right;
-        gap: 40px;
-        margin-right: 3.5%;
-    }
-    .linkRedeSocial{
-        width: 30px;
-        height: 30px;
-    }
 
+footer {
+    width: 100%;
+    display: flex;
+    background-color: #001521;
+    bottom: 0px;
+    height: 150px;
+    box-shadow: 0px -2px 10px #111111;
+}
 
+#logoESobre {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    gap: 5%;
+}
 
+.logos {
+    width: 75px;
+    height: 75px;
+}
+
+#linkSitePET {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+#contatos {
+    width: 50%;
+
+}
+
+#contatos p {
+    color: #fff;
+    text-align: right;
+    font-size: 20px;
+    margin-right: 9%;
+}
+
+#redesSociais {
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+    margin-right: 3.5%;
+}
+
+.linkRedeSocial {
+    width: 30px;
+    height: 30px;
+}
+
+.bttDiaPalestra {
+    border: none;
+    border-bottom: 3px solid #006199;
+    margin-right: 10px;
+    font-size: large;
+    font-family: 'Lexend', sans-serif;
+    margin-top: 60px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: #DDDDDD;
+}
+
+.bttDiaPalestra:hover {
+    border-bottom: 3px solid #e6b000;
+}
+
+.bttDiaPalestra.ativo {
+    border-bottom: 3px solid #e6b000;
+}
+
+.popUpInfo {
+    width: 500px;
+    height: auto;
+    background-color: #f0f0f0;
+    position: absolute;
+    margin-top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 5px 4px 100px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    visibility: hidden;
+    z-index: -1000px;
+}
+
+#div-popUpInfo.open {
+    visibility: visible;
+    padding: 20px;
+    font-family: 'Lexend', sans-serif;
+
+}
