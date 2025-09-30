@@ -257,15 +257,16 @@ header.scrolled #subtituloSecomp {
         flex-direction: column;
         background-color: #fff;
         border-radius: 10px; 
-        width: 75%;
+        width: 67%;
         margin: 100px auto 0 auto; 
         margin-bottom: 50px;
+        padding-top: 1.5rem;
     }
     #titulos{
         display: flex;
         justify-content: space-evenly;
         margin-top: 10px;
-        margin-bottom: 50px;
+        margin-bottom: 1.5rem;
     }
     .btnCronograma{
         background: linear-gradient(to right, #004973, #0079BE);
@@ -275,7 +276,7 @@ header.scrolled #subtituloSecomp {
         border-radius: 30px;
         border: 0; 
         cursor: pointer;
-        font-weight: 500;
+        font-weight: 600;
         font-size: medium;
     }
     .btnCronograma.ativo{
@@ -294,17 +295,21 @@ header.scrolled #subtituloSecomp {
         font-family: Lexend Deca, sans-serif;
         font-size: medium;
         text-decoration: none;
+        font-weight: 600;
     }
 
     #textos{
-        margin-bottom: 200px;
+        margin-bottom: 2rem;
         justify-content: center;
+        padding: 0 4rem 0 4rem;
     }
     .texto{
         display: none;
         text-align: center;
         color: #037DC3;
+        font-size: 20px;
     }
+
     footer{
         width: 100%;
         display: flex;

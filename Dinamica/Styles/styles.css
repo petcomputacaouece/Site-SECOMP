@@ -110,6 +110,7 @@ header {
 
 #sidebar.open {
     right: 0;
+    z-index: 3001;
 }
 #containerTabuleirando{
     display: flex;
@@ -136,6 +137,7 @@ header {
     border-radius: 10px;
     text-align: center;
     padding: 0 20px 0 20px;
+    font-weight: 600;
 }
 #containerJogos{
     display: flex;
