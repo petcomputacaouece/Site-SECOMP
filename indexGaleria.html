@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Galeria/css/style.css">
+    <script src="Dinamica/Scripts/scripts.js" defer></script>
+    <script src="Galeria/Scripts/script.js" defer></script>
+    <title>Galeria</title>
+</head>
+
+<body>
+    <header id="headerPrincipal">
+        <img src="img/logo-secomp2.png" alt="SECOMP" id="logoSecomp">
+        <div id="divtituloheader">
+            <h1 id="tituloSecomp">Cyber Systems</h1>
+            <p id="subtituloSecomp">XXII SEMANA DA COMPUTAÇÃO</p>
+        </div>
+        <button id="menuToggle" onclick="toggleSidebar()">☰</button>
+    </header>
+    <aside id="sidebar">
+        <nav>
+            <button id="menuToggle" onclick="toggleSidebar()">☰</button>
+            <ul>
+                <li><a href="/index.html#sobre">Sobre</a></li>
+                <li><a href="#cronograma">Edições anteriores</a></li>
+                <li><a href="#contato" onclick="toggleSidebar()">Contato</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <div class="div-SecaoGaleria">
+            <div class="div-TituloSecaoGaleria">
+                <h2 style="margin-top: -3px;">Galeria</h2>
+            </div>
+
+            <div id="div-ContainerGaleria"></div>
+            <div id="div-BotoesPaginacao"></div>
+            <div id="div-ContainerPopUp"></div>
+            <script src="script.js"></script>
+        </div>
+    </main>
+</body>
+
+</html>
