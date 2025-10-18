@@ -1,7 +1,8 @@
 const pasta = "img/galeria/";
-const qtdImagensPagina = 9;
+const qtdImagensPagina = 8;
 let imgAtual = 1;
 let qtdImagens = 30;
+let paginaAtual = 0;
 
 const containerGaleria = document.getElementById("div-ContainerGaleria");
 const paginacao = document.getElementById("div-BotoesPaginacao");
@@ -10,33 +11,38 @@ const containerPopUp = document.getElementById("div-ContainerPopUp");
 function exibirImagens() {
     containerGaleria.innerHTML = "";
 
-    const inicio = (imgAtual - 1) * qtdImagensPagina;
+    const inicio = paginaAtual * qtdImagensPagina;
+    const fim = inicio + qtdImagensPagina;
 
-    for (let i = 0; i < qtdImagens; i++) {
-        const nomeImagem = `foto${i + 1}.png`;
+    for (let i = inicio; i < fim && i < qtdImagens; i++) {
+        const nomeImagem = `foto${i + 1}.jpg`;
         containerGaleria.innerHTML += `
-            <div class="div-CardGaleria">
-                <img 
-                    src="${pasta + nomeImagem}" 
-                    class="img-Galeria" 
-                    alt="Imagem ${i + 1}" 
-                    onclick="zoomImagem(${i})">
-            </div>
-        `;
+        <div class="div-CardGaleria">
+            <img 
+                src="${pasta + nomeImagem}" 
+                class="img-Galeria" 
+                alt="Imagem ${i + 1}" 
+                onclick="zoomImagem(${i})" >
+        </div>
+    `;
     }
 
     paginacao.innerHTML = "";
     const totalPaginas = Math.ceil(qtdImagens / qtdImagensPagina)
     for (let i = 0; i < totalPaginas; i++) {
-        paginacao.innerHTML += `<button onclick="mudarPagina(${i})">${i + 1}</button> `;
+        paginacao.innerHTML += `
+            <button onclick="mudarPagina(${i})" ${i === paginaAtual ? 'style="font-weight:bold;"' : ''} class="bttMudarPagina">
+                ${i + 1}
+            </button>
+        `;
     }
 
 }
 
 exibirImagens();
 
-function mudarPagina(pagina) {
-    atual = pagina + 1;
+function mudarPagina(novaPagina) {
+    paginaAtual = novaPagina;
     exibirImagens();
 }
 
@@ -47,10 +53,11 @@ function zoomImagem(indice) {
     containerPopUp.classList.add("open");
 
     containerPopUp.innerHTML = `
-        <img src="img/botao-fechar.png" style="height: 35px; float: right; cursor: pointer; margin: 50px auto;" id="bttFechar">
-        <img src="${pasta}foto${(imgAtual + 1)}.png" class="img-Ampliada" style="width: 90%; max-height: 400px; object-fit: contain; border-radius: 10px; display: block; margin: 250px auto;">
-        <img src="img/imgAnterior.png" style="height: 35px; float: left; cursor: pointer; margin: -500px auto;" id="bttAnterior">
-        <img src="img/imgProximo.png" style="height: 35px; float: right; cursor: pointer; margin: -500px auto;" id="bttProximo">
+        <img src="img/botao-fechar.png" style="height: 35px; float: right; cursor: pointer; margin: 30px auto;" id="bttFechar">
+        <img src="${pasta}foto${(imgAtual + 1)}.jpg" class="img-Ampliada" style="width: 90%; max-height: 700px; object-fit: contain; border-radius: 10px; display: block; margin: 50px auto;">
+        <img src="img/imgAnterior.png" style="height: 35px; float: left; cursor: pointer; margin: -400px auto;" id="bttAnterior">
+        <img src="img/imgProximo.png" style="height: 35px; float: right; cursor: pointer; margin: -400px auto;" id="bttProximo">
+        <img src="img/imgBttDownload.png" style="height: 50px; display: block; cursor: pointer; margin: auto;" id="bttDownload" onclick="baixarImagem()">
     `;
 
     const bttFechar = document.getElementById("bttFechar");
@@ -74,6 +81,15 @@ function zoomImagem(indice) {
     })
 }
 
+function baixarImagem(indice) {
+    const img = containerPopUp.querySelector(".img-Ampliada"); // pega a imagem do modal
+    if (!img || !img.src) return;
+    const link = document.createElement("a");
+    link.href = img.src;
+    link.download = img.src.split("/").pop();
+    link.click();
+}
+
 
 containerGaleria.addEventListener("click", function (e) {
     if (e.target.classList.contains("img-Galeria")) {
@@ -84,4 +100,3 @@ containerGaleria.addEventListener("click", function (e) {
 window.addEventListener("DOMContentLoaded", () => {
     exibirImagens();
 });
-
