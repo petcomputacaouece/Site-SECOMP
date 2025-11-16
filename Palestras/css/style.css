@@ -280,17 +280,18 @@ footer {
 
 .popUpInfo {
     width: 90%;
-    height: auto;
+    max-width: 500px;
     background-color: #f0f0f0;
-    position: absolute;
-    margin-top: -20px;
+    position: fixed;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 5px 4px 100px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 4px 100px 10px rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
     visibility: hidden;
-    z-index: -1000px;
-    max-width: 500px;
+    margin-top: 10%;
+    height: auto;
 }
 
 #div-popUpInfo.open {
@@ -301,16 +302,44 @@ footer {
 }
 
 @media (max-width: 900px) {
+    header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        position: relative;
+    }
+
+    #divtituloheader {
+        flex: 1;
+        text-align: center;
+        margin: 0;
+    }
+
     #tituloSecomp {
-        font-size: 50px;
+        font-size: 38px;
+        margin: 0;
+    }
+
+    #subtituloSecomp {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    #logoSecomp {
+        height: 80px;
+        margin: 0;
+    }
+
+    #menuToggle {
+        margin: 0;
+        z-index: 10;
+        margin-top: 10px;
     }
 
     .div-CardPalestra {
         width: 45%;
-    }
-
-    #inscricao {
-        width: 80%;
     }
 
     footer {
@@ -340,32 +369,42 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     header {
-        height: 120px;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         padding: 0 10px;
+        position: relative;
+    }
+
+    #divtituloheader {
+        flex: 1;
+        text-align: center;
+        margin: 0;
+    }
+
+    #tituloSecomp {
+        font-size: 28px;
+        margin: 0;
+        line-height: 1.1;
+    }
+
+    #subtituloSecomp {
+        font-size: 16px;
+        margin: 0;
+        line-height: 1;
     }
 
     #logoSecomp {
         height: 50px;
-        margin-left: -50px;
-        padding-right: 10%;
-    }
-
-    #tituloSecomp {
-        font-size: 32px;
-        margin-top: 10%;
-        padding-right: 15%;
-
-    }
-
-    #subtituloSecomp {
-        font-size: 18px;
-        padding-right: 15%;
+        margin: 0;
     }
 
     #menuToggle {
-        padding-right: 2%;
+        margin: 0;
     }
 
     .div-TituloSecaoPalestras {
@@ -395,14 +434,12 @@ footer {
         visibility: hidden;
     }
 
-    #btnInscricao {
-        width: 100%;
-    }
-
     .popUpInfo {
         width: 90%;
         max-width: 450px;
     }
 
-
+    .bttDiaPalestra {
+        font-size: medium;
+    }
 }
