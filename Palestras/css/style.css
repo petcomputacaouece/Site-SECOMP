@@ -15,6 +15,7 @@ body {
     font-family: 'KonkhmerSleokchher', sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
+    min-width: 300px;
 }
 
 header {
@@ -39,7 +40,6 @@ header {
 
 #logoSecomp {
     height: 110px;
-    width: 150px;
     margin: auto 0 auto 0;
 }
 
@@ -117,12 +117,14 @@ header {
 
 
 .div-SecaoPalestras {
-    width: 850px;
+    width: 90%;
     background-color: #DDDDDD;
     margin: 50px auto 0 auto;
     border-radius: 10px;
     align-items: center;
     padding-bottom: 30px;
+    min-width: 300px;
+    max-width: 850px;
 }
 
 .div-TituloSecaoPalestras {
@@ -277,7 +279,7 @@ footer {
 }
 
 .popUpInfo {
-    width: 500px;
+    width: 90%;
     height: auto;
     background-color: #f0f0f0;
     position: absolute;
@@ -288,11 +290,119 @@ footer {
     border-radius: 10px;
     visibility: hidden;
     z-index: -1000px;
+    max-width: 500px;
 }
 
 #div-popUpInfo.open {
     visibility: visible;
     padding: 20px;
     font-family: 'Lexend', sans-serif;
+
+}
+
+@media (max-width: 900px) {
+    #tituloSecomp {
+        font-size: 50px;
+    }
+
+    .div-CardPalestra {
+        width: 45%;
+    }
+
+    #inscricao {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    #logoESobre,
+    #contatos {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #contatos p {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #redesSociais {
+        justify-content: center;
+        margin-right: 0;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        height: 120px;
+        padding: 0 10px;
+    }
+
+    #logoSecomp {
+        height: 50px;
+        margin-left: -50px;
+        padding-right: 10%;
+    }
+
+    #tituloSecomp {
+        font-size: 32px;
+        margin-top: 10%;
+        padding-right: 15%;
+
+    }
+
+    #subtituloSecomp {
+        font-size: 18px;
+        padding-right: 15%;
+    }
+
+    #menuToggle {
+        padding-right: 2%;
+    }
+
+    .div-TituloSecaoPalestras {
+        width: 170px;
+        font-size: 18px;
+    }
+
+    .div-TituloSecaoPalestras h2 {
+        padding: 5px;
+    }
+
+    .div-InfoPalestra {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-CardPalestra {
+        width: 90%;
+    }
+
+    .img-InfoPalestra {
+        width: 50%;
+        height: auto;
+    }
+
+    #inscricao {
+        visibility: hidden;
+    }
+
+    #btnInscricao {
+        width: 100%;
+    }
+
+    .popUpInfo {
+        width: 90%;
+        max-width: 450px;
+    }
+
 
 }
