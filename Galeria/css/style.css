@@ -266,6 +266,45 @@ footer {
     width: 13%;
 }
 
+#bttFechar {
+    height: 35px;
+    float: right;
+    cursor: pointer;
+    margin: 30px auto;
+}
+
+#bttProximo,
+#bttAnterior {
+    height: 35px;
+    cursor: pointer;
+    margin: -400px auto;
+}
+
+#bttProximo {
+    float: right;
+}
+
+#bttAnterior {
+    float: left;
+}
+
+.img-Ampliada {
+    width: 90%;
+    max-height: 700px;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    margin: 50px auto;
+}
+
+#bttDownload {
+    height: 50px;
+    display: block;
+    cursor: pointer;
+    margin: auto;
+}
+
+
 @media (max-width: 650px) {
     header {
         width: 100%;
@@ -326,15 +365,29 @@ footer {
 
     #bttProximo,
     #bttAnterior {
-        height: 50px;
-        gap: 10%;
+        height: 20px;
+        margin: -200px auto;
+    }
+
+    #bttProximo {
+        padding-left: 20px;
+    }
+
+    #bttAnterior {
+        padding-right: 20px;
     }
 
     #bttFechar {
-        height: 25px;
+        height: 30px;
     }
 
     .img-Ampliada {
-        width: 60%;
+        width: 80%;
+        margin: auto 10%;
+    }
+
+    #bttDownload {
+        height: 40px;
+        margin-top: 20px;
     }
 }

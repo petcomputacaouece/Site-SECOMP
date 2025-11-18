@@ -53,11 +53,11 @@ function zoomImagem(indice) {
     containerPopUp.classList.add("open");
 
     containerPopUp.innerHTML = `
-        <img src="img/botao-fechar.png" style="height: 35px; float: right; cursor: pointer; margin: 30px auto;" id="bttFechar">
-        <img src="${pasta}foto${(imgAtual + 1)}.jpg" class="img-Ampliada" style="width: 90%; max-height: 700px; object-fit: contain; border-radius: 10px; display: block; margin: 50px auto;">
-        <img src="img/imgAnterior.png" style="height: 35px; float: left; cursor: pointer; margin: -400px auto;" id="bttAnterior">
-        <img src="img/imgProximo.png" style="height: 35px; float: right; cursor: pointer; margin: -400px auto;" id="bttProximo">
-        <img src="img/imgBttDownload.png" style="height: 50px; display: block; cursor: pointer; margin: auto;" id="bttDownload" onclick="baixarImagem()">
+        <img src="img/botao-fechar.png" id="bttFechar">
+        <img src="${pasta}foto${(imgAtual + 1)}.jpg" class="img-Ampliada">
+        <img src="img/imgAnterior.png" id="bttAnterior">
+        <img src="img/imgProximo.png" id="bttProximo">
+        <img src="img/imgBttDownload.png" id="bttDownload" onclick="baixarImagem()">
     `;
 
     const bttFechar = document.getElementById("bttFechar");
@@ -82,7 +82,7 @@ function zoomImagem(indice) {
 }
 
 function baixarImagem(indice) {
-    const img = containerPopUp.querySelector(".img-Ampliada"); // pega a imagem do modal
+    const img = containerPopUp.querySelector(".img-Ampliada");
     if (!img || !img.src) return;
     const link = document.createElement("a");
     link.href = img.src;
