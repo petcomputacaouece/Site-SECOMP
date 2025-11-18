@@ -58,7 +58,6 @@ header {
     color: transparent;
     text-align: center;
     -webkit-text-stroke: 1px #DDDDDD;
-    ;
     font-size: 30px;
     line-height: 1;
     margin: 0;
@@ -236,7 +235,6 @@ footer {
 
 #contatos {
     width: 50%;
-
 }
 
 #contatos p {
@@ -390,12 +388,14 @@ footer {
         font-size: 28px;
         margin: 0;
         line-height: 1.1;
+        margin-left: -10%;
     }
 
     #subtituloSecomp {
         font-size: 16px;
         margin: 0;
         line-height: 1;
+        margin-left: -10%;
     }
 
     #logoSecomp {

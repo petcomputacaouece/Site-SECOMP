@@ -9,16 +9,13 @@
     box-sizing: border-box;
 }
 
-/* img {
-    height: 1000px;
-} */
-
 body {
     margin: 0;
     background-image: url(../../img/background-principal.png);
     font-family: 'KonkhmerSleokchher', sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
+    min-width: 300px;
 }
 
 header {
@@ -44,7 +41,6 @@ header {
 
 #logoSecomp {
     height: 110px;
-    width: 150px;
     margin: auto 0 auto 0;
 }
 
@@ -63,7 +59,6 @@ header {
     color: transparent;
     text-align: center;
     -webkit-text-stroke: 1px #DDDDDD;
-    ;
     font-size: 30px;
     line-height: 1;
     margin: 0;
@@ -117,16 +112,18 @@ header {
 
 #sidebar.open {
     right: 0;
-    z-index: 10000;
+    z-index: 3001;
 }
 
 .div-SecaoMinicursos {
-    width: 850px;
+    width: 90%;
     background-color: #DDDDDD;
     margin: 50px auto 0 auto;
     border-radius: 10px;
     align-items: center;
     padding-bottom: 30px;
+    min-width: 300px;
+    max-width: 850px;
 }
 
 .div-TituloSecaoMinicursos {
@@ -238,7 +235,6 @@ footer {
 
 #contatos {
     width: 50%;
-
 }
 
 #contatos p {
@@ -281,17 +277,19 @@ footer {
 }
 
 .popUpInfo {
-    width: 500px;
-    height: 500px;
+    width: 90%;
+    max-width: 500px;
     background-color: #f0f0f0;
-    position: absolute;
-    margin-top: -20px;
+    position: fixed;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 5px 4px 100px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 4px 100px 10px rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
     visibility: hidden;
-    z-index: -1000px;
+    margin-top: 10%;
+    height: auto;
 }
 
 #div-popUpInfo.open {
@@ -299,4 +297,149 @@ footer {
     padding: 20px;
     font-family: 'Lexend', sans-serif;
 
+}
+
+@media (max-width: 900px) {
+    header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        position: relative;
+    }
+
+    #divtituloheader {
+        flex: 1;
+        text-align: center;
+        margin: 0;
+    }
+
+    #tituloSecomp {
+        font-size: 38px;
+        margin: 0;
+    }
+
+    #subtituloSecomp {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    #logoSecomp {
+        height: 80px;
+        margin: 0;
+    }
+
+    #menuToggle {
+        margin: 0;
+        z-index: 10;
+        margin-top: 10px;
+    }
+
+    .div-CardMinicurso {
+        width: 45%;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    #logoESobre,
+    #contatos {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #contatos p {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #redesSociais {
+        justify-content: center;
+        margin-right: 0;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        position: relative;
+    }
+
+    #divtituloheader {
+        flex: 1;
+        text-align: center;
+        margin: 0;
+    }
+
+    #tituloSecomp {
+        font-size: 28px;
+        margin: 0;
+        line-height: 1.1;
+        margin-left: -10%;
+    }
+
+    #subtituloSecomp {
+        font-size: 16px;
+        margin: 0;
+        line-height: 1;
+        margin-left: -10%;
+    }
+
+    #logoSecomp {
+        height: 50px;
+        margin: 0;
+    }
+
+    #menuToggle {
+        margin: 0;
+    }
+
+    .div-TituloSecaoMinicurso {
+        width: 170px;
+        font-size: 18px;
+    }
+
+    .div-TituloSecaoMinicurso h2 {
+        padding: 5px;
+    }
+
+    .div-InfoMinicurso {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-CardMinicurso {
+        width: 90%;
+    }
+
+    .img-InfoMinicurso {
+        width: 50%;
+        height: auto;
+    }
+
+    #inscricao {
+        visibility: hidden;
+    }
+
+    .popUpInfo {
+        width: 90%;
+        max-width: 450px;
+    }
+
+    .bttDiaMinicurso {
+        font-size: medium;
+    }
 }
