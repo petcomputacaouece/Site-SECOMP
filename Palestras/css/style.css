@@ -180,12 +180,11 @@ header {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 2px 10px #111111;
-    position: sticky;
+    position: static;
     bottom: 75px;
     width: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 50px;
+    margin: 25px auto 50px auto;
 }
 
 #textoInscricao {
