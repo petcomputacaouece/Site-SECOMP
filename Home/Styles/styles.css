@@ -1,46 +1,46 @@
-    @font-face {
-        font-family: 'KonkhmerSleokchher';
-        src: url('../../textfonts/KonkhmerSleokchher-Regular.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-    *{
-        box-sizing: border-box;
-    }
+@font-face {
+    font-family: 'KonkhmerSleokchher';
+    src: url('../../textfonts/KonkhmerSleokchher-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+}
 
-    html {
+html {
     scroll-padding-top: 170px;
     scroll-behavior: smooth;
-    }
+}
 
-    body {
-        margin: 0;
-        background-image: url(../../img/background-principal.png);
-        font-family: 'KonkhmerSleokchher', sans-serif;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height:100vh;
-        display:flex;
-        flex-direction: column;
-    }
+body {
+    margin: 0;
+    background-image: url(../../img/background-principal.png);
+    font-family: 'KonkhmerSleokchher', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+}
 
-    header {
-        height: 170px;
-        width: 100%;
-        top: 0;
-        background-color: #001521;
-        box-shadow: 0px 2px 10px #111111;
-        display: flex;
-        position: sticky;
-        top: 0;
-        justify-content: center;
-        padding: 0 20px;
-    }
+header {
+    height: 10rem;
+    width: 100%;
+    top: 0;
+    background-color: #001521;
+    box-shadow: 0px 2px 10px #111111;
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    padding: 0 20px;
+}
 
 #logoSecompLateral {
     display: none;
     height: 110px;
-    width: 150px;
+    width: 140px;
     margin: 0;
     margin-top: 20px;
     margin-left: auto;
@@ -48,7 +48,7 @@
 
 #logoSecompCentral {
     height: 110px;
-    width: 150px;
+    width: 140px;
     margin: auto;
     margin-top: 20px;
     transition: all 0.3s ease-in-out;
@@ -62,21 +62,20 @@ header.scrolled #logoSecompLateral {
     display: block;
 }
 
+#divtituloheader {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
 
-    #divtituloheader {
-        color: #ffffff;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #tituloSecomp {
-        font-size: 100px;
-        margin: 0px;
-        text-decoration: underline;
-        text-align: center;
-        font-weight: 400;
-        line-height: 1.3;
-    }
+#tituloSecomp {
+    font-size: 100px;
+    margin: 0px;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.3;
+}
 
 #tituloSecomp,
 #subtituloSecomp {
@@ -140,7 +139,7 @@ header.scrolled #subtituloSecomp {
     position: fixed;
     top: 0;
     right: -200px;
-    width: 170px;
+    width: 12rem;
     height: 100%;
     background: linear-gradient(to bottom, #001521, #005687);
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
@@ -174,178 +173,348 @@ header.scrolled #subtituloSecomp {
     right: 0;
 }
 
-    #informacoesDoEvento {
-        display: flex;
-        flex-direction: column;
-        color: #fff;
-        align-items: center;
-        margin-top: 300px;
-        font-size: 30px;
-        gap: 10px;
-    }
+#informacoesDoEvento {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    margin-top: 300px;
+    font-size: 30px;
+    gap: 10px;
+}
 
-    .dataLocal {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
+.dataLocal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-    .imagemDataLocal {
-        width: 30px;
-        height: 30px;
-    }
+.imagemDataLocal {
+    width: 30px;
+    height: 30px;
+}
 
-    .dataLocalTexto {
-        margin: 0;
-        font-weight: lighter;
-    }
+.dataLocalTexto {
+    margin: 0;
+    font-weight: lighter;
+}
 
-    #sobre {
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
-    }
+#sobre {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
 
-    #textoSobre {
-        gap: 20px;
-        text-align: justify;
-        justify-content: center;
-        width: 50%;
-        font-size: 20px;
-        height: auto;
-        padding: 0 30px 0 30px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0px 2px 10px #111111;
-    }
+#textoSobre {
+    gap: 20px;
+    text-align: justify;
+    justify-content: center;
+    width: 50%;
+    font-size: 20px;
+    height: auto;
+    padding: 0 30px 0 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px #111111;
+}
 
-    #inscricao{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0px 2px 10px #111111;
-        position:static;
-        bottom: 75px;
-        width: 50%;
-        margin: 0 auto 50px auto;
-    }
-    #textoInscricao{
-        margin-left: 20px;
-    }
-    #btnInscricao{
-        height: auto;
-        width: auto;
-        border-radius: 20px;
-        border: 0;
-        padding: 10px 20px 10px 20px;
-        background: linear-gradient(to right, #004973, #006199);
-        color: #fff;
-        margin-right: 20px;
-        font-weight: 500;
-        cursor: pointer;
-    }
-    #cronograma{
-        display: flex;
-        flex-direction: column;
-        background-color: #fff;
-        border-radius: 10px; 
-        width: 67%;
-        margin: 100px auto 0 auto; 
-        margin-bottom: 50px;
-        padding-top: 1.5rem;
-    }
-    #titulos{
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 10px;
-        margin-bottom: 1.5rem;
-    }
+#inscricao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px #111111;
+    position:static;
+    bottom: 75px;
+    width: 65%;
+    margin: 3rem auto 4rem auto;
+}
+
+#textoInscricao{
+    margin-left: 20px;
+}
+
+#btnInscricao{
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    border: 0;
+    padding: 10px 20px 10px 20px;
+    background: linear-gradient(to right, #004973, #006199);
+    color: #fff;
+    margin-right: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#cronograma{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px; 
+    width: 67%;
+    margin: 100px auto 0 auto; 
+    margin-bottom: 50px;
+    padding-top: 1.5rem;
+}
+
+#titulos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.btnCronograma{
+    background: linear-gradient(to right, #004973, #0079BE);
+    box-shadow: 0px 2px 10px #111111;
+    color: #fff;
+    padding: 1vw 3vw 1vw 3vw;   
+    border-radius: 30px;
+    border: 0; 
+    cursor: pointer;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.btnCronograma.ativo{
+    background: none;
+    background-color: #000;
+}
+
+.maisCronograma{
+    background-color: #000;
+    box-shadow: 0px 2px 10px #111111;
+    color: #fff;
+    padding: 1vw 3vw 1vw 3vw;  
+    border-radius: 30px;
+    border: 0; 
+    cursor: pointer;
+    font-family: Lexend Deca, sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#textos{
+    margin-bottom: 2rem;
+    justify-content: center;
+    padding: 0 4rem 0 4rem;
+}
+
+.texto{
+    display: none;
+    text-align: center;
+    color: #037DC3;
+    font-size: 20px;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    background-color: #001521;
+    margin-top: auto;
+    height: 150px;
+    box-shadow: 0px -2px 10px #111111;
+}
+
+#logoESobre{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    gap: 5%;
+}
+
+.logos{
+    width: 75px;
+    height: 75px;
+}
+    
+#linkSitePET{
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+#contatos{
+    width: 50%;
+}
+
+#contatos p{
+    color: #fff;
+    text-align: right;
+    font-size: 20px;
+    margin-right: 9%;
+}
+
+#redesSociais{
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+    margin-right: 3.5%;
+}
+
+.linkRedeSocial{
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 1300px) {
     .btnCronograma{
-        background: linear-gradient(to right, #004973, #0079BE);
-        box-shadow: 0px 2px 10px #111111;
-        color: #fff;
-        padding: 1vw 3vw 1vw 3vw;   
-        border-radius: 30px;
-        border: 0; 
-        cursor: pointer;
-        font-weight: 600;
-        font-size: medium;
+        padding: 0.8vw 2.5vw 0.8vw 2.5vw;   
+        font-size: small;
     }
-    .btnCronograma.ativo{
-        background: none;
-        background-color: #000;
+}
+
+@media (max-width: 880px) {
+    header{
+        height: 80px;
     }
 
-    .maisCronograma{
-        background-color: #000;
-        box-shadow: 0px 2px 10px #111111;
-        color: #fff;
-        padding: 1vw 3vw 1vw 3vw;  
-        border-radius: 30px;
-        border: 0; 
-        cursor: pointer;
-        font-family: Lexend Deca, sans-serif;
+    header.scrolled #tituloSecomp{
+        font-size: 2.5rem;
+    }
+
+    #tituloSecomp{
+        font-size: 3.5rem;
+    }
+
+    header.scrolled #subtituloSecomp{
+        font-size: 1.3rem;
+    }
+
+    #subtituloSecomp{
+        font-size: 2rem;
+    }
+
+    #logoSecompLateral, #logoSecompCentral {
+        height: 70px;
+        width: 100px;
+        margin-top: 0.5rem;
+    }
+
+    #informacoesDoEvento {
+        margin-top: 150px;
+    }
+
+    #titulos{
+        flex-direction: column;
+        gap: 1rem;
+        width: 80%;
+        margin: 0 auto 1rem auto;
+    }
+
+    .btnCronograma {
         font-size: medium;
-        text-decoration: none;
-        font-weight: 600;
+        padding: 0.8rem 0;
     }
 
     #textos{
-        margin-bottom: 2rem;
-        justify-content: center;
-        padding: 0 4rem 0 4rem;
+        padding: 0 2rem 0 2rem;
     }
-    .texto{
-        display: none;
-        text-align: center;
-        color: #037DC3;
+}
+
+@media (max-width: 580px) {
+    header.scrolled #tituloSecomp{
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    #tituloSecomp{
+        font-size: 3rem;
+    }
+
+    header.scrolled #subtituloSecomp{
+        font-size: 1.1rem;
+    }
+
+    #subtituloSecomp{
+        font-size: 1.5rem;
+    }
+
+    #informacoesDoEvento {
+        margin-top: 120px;
+    }
+    
+    #textoSobre, #cronograma, #inscricao {
+        width: 80%;
+    }
+
+    .info-premios {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #textoSobre, .texto{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 430px) {
+    header.scrolled #tituloSecomp{
+        font-size: 1.6rem;
+    }
+
+    #tituloSecomp{
+        font-size: 2.5rem;
+    }
+
+    header.scrolled #subtituloSecomp, #subtituloSecomp{
+        font-size: 1.3rem;
+    }
+
+    #logoSecompLateral, #logoSecompCentral {
+        height: 60px;
+        width: 90px;
+    }
+
+    #informacoesDoEvento {
+        margin-top: 100px;
+    }
+
+    .dataLocalTexto {
         font-size: 20px;
     }
 
     footer{
-        width: 100%;
-        display: flex;
-        background-color: #001521;
-        margin-top: auto;
-        height: 150px;
-        box-shadow: 0px -2px 10px #111111;
-    }
-    #logoESobre{
-        width: 50%;
-        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
         align-items: center;
-        margin-left: 2%;
-        gap: 5%;
-    }
-    .logos{
-        width: 75px;
-        height: 75px;
-    }
-    
-    #linkSitePET{
-        text-align: center;
-        font-size: 14px;
-        color: white;
-    }
-    #contatos{
-        width: 50%;
-    }
-    #contatos p{
-        color: #fff;
-        text-align: right;
-        font-size: 20px;
-        margin-right: 9%;
-    }
-    #redesSociais{
-        display: flex;
-        justify-content: right;
-        gap: 40px;
-        margin-right: 3.5%;
-    }
-    .linkRedeSocial{
-        width: 30px;
-        height: 30px;
     }
 
+    #contatos p{
+        text-align: center;
+        margin: 0.5rem 0 0 0;
+    }
+
+    #logoESobre{
+        width: auto;
+        margin: 0;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 350px) {
+    header.scrolled #tituloSecomp{
+        font-size: 1.3rem;
+    }
+
+    header.scrolled #subtituloSecomp{
+        font-size: 1rem;
+    }
+
+    #tituloSecomp{
+        font-size: 1.8rem;
+    }
+
+    #subtituloSecomp{
+        font-size: 1.3rem;
+    }
+
+    #inscricao{
+        width: 90%;
+    }
+}

@@ -89,3 +89,4 @@ for (let i = 0; i < botoesDiaPalestra.length; i++) {
 document.addEventListener("DOMContentLoaded", () => {
     mostrarPalestra(1);
 });
+

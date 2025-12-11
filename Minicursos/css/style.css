@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    height: 150px;
+    height: 10rem;
     width: 100%;
     top: 0;
     background-color: #001521;
@@ -80,7 +80,7 @@ header {
     position: fixed;
     top: 0;
     right: -200px;
-    width: 170px;
+    width: 12rem;
     height: 100%;
     background: linear-gradient(to bottom, #001521, #005687);
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
@@ -185,7 +185,7 @@ header {
     width: 50%;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 50px;
+    margin: 25px auto 50px auto;
 }
 
 #textoInscricao {
